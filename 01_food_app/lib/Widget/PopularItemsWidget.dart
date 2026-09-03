@@ -41,7 +41,12 @@ class PopularItemsWidget extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         
-                        Image.asset(foodItems[i]["image"], height: 130),
+                        InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(context, "itemPage", arguments: i,);
+                          },
+                          child: Image.asset(foodItems[i]["image"], height: 130)
+                        ),
                         
                         Text(
                           foodItems[i]["title"],
