@@ -4,14 +4,6 @@ import 'package:food_app/Widget/food_data.dart';
 class CategoriesWidget extends StatelessWidget {
   const CategoriesWidget({super.key});
 
-  // final List<String> imagePaths = [
-  //   "assets/images/biryani.png",
-  //   "assets/images/burger.png",
-  //   "assets/images/drink.png",
-  //   "assets/images/pizza.png",
-  //   "assets/images/salan.png",
-  // ];
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
