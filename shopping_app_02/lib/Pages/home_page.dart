@@ -66,8 +66,22 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 
-                // Categories
+                // Categories Widget
                 CategoriesWidget(),
+
+                // Items
+                Container(
+                  alignment: Alignment.centerLeft,
+                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                  child: Text(
+                    "Best Selling",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF4C53A5), 
+                    ),
+                  ),
+                )
               ],
             ),
           ),
