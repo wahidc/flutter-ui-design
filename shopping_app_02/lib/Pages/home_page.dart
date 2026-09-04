@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app_02/Widget/categories_widget.dart';
 import 'package:shopping_app_02/Widget/home_app_bar.dart';
+import 'package:shopping_app_02/Widget/items_widget.dart';
 //import 'package:';
 
 class HomePage extends StatelessWidget {
@@ -12,8 +13,8 @@ class HomePage extends StatelessWidget {
           HomeAppBar(),
           Container(
             // temp height
-            height: 500,
-            //
+            //height: 500,
+            
             padding: EdgeInsets.only(top: 15),
             decoration: BoxDecoration(
               color: Color(0xFFEDECF2),
@@ -81,7 +82,10 @@ class HomePage extends StatelessWidget {
                       color: Color(0xFF4C53A5), 
                     ),
                   ),
-                )
+                ),
+
+                // Items Widget
+                ItemsWidget(),
               ],
             ),
           ),

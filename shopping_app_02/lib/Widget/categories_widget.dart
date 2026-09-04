@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app_02/Pages/product_data.dart';
 
 class CategoriesWidget extends StatelessWidget {
   const CategoriesWidget({super.key});
@@ -9,7 +10,7 @@ class CategoriesWidget extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          for(int i=1; i<8; i++)
+          for(int i=0; i<products.length; i++)
           Container(
             
             margin: EdgeInsets.symmetric(horizontal: 10),
@@ -21,12 +22,12 @@ class CategoriesWidget extends StatelessWidget {
             child: Row(
               children: [
                 Image.asset(
-                  "assets/images/$i.png",
+                  products[i]["image"],
                   width: 40,
                   height: 40,
                 ),
                 Text(
-                  "Sandal",
+                  products[i]["title"],
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
